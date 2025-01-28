@@ -2,6 +2,9 @@ import { Grid, Paper } from "@mui/material";
 
 const Layout = ({ children }) => {
   return (
+    <>
+
+  
     <Grid container style={{ height: "100vh", borderRadius: "100px" }}>
       {/* Left Image Section */}
       <Grid item xs={12} md={6} sx={{ background: "url('/assets/pexels-eberhardgross-8051674.jpg')", backgroundSize: "cover" }} />
@@ -11,6 +14,7 @@ const Layout = ({ children }) => {
         {children}
       </Grid>
     </Grid>
+    </>
   );
 };
 
