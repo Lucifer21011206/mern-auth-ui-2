@@ -30,7 +30,7 @@ const LoginForm = () => {
         <TextField fullWidth label="Email" name="email" type="email" value={formData.email} onChange={handleChange} variant="outlined" margin="normal" required />
         <TextField fullWidth label="Password" name="password" type="password" value={formData.password} onChange={handleChange} variant="outlined" margin="normal" required />
         
-        <Link href="#" variant="body2" display="block" textAlign="right" mb={2}>
+        <Link href="/forgotpassword" variant="body2" display="block" textAlign="right" mb={2}>
           Forgot Password?
         </Link>
 
