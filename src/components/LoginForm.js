@@ -20,7 +20,7 @@ const LoginForm = () => {
   };
 
   return (
-    <Box display="flex" justifyContent="center" alignItems="center" minHeight="70vh" bgcolor="background.default">
+    <Box display="flex" justifyContent="center" alignItems="center" minHeight="65vh" bgcolor="background.default">
       <Box sx={{ padding: 4, borderRadius: 2, maxWidth: 400, width: "100%", backgroundColor: "white" }}>
         <Typography variant="h5" fontWeight="bold" mb={2} textAlign="center">
           Welcome Back
@@ -72,7 +72,7 @@ const LoginForm = () => {
             Forgot Password?
           </Link>
 
-          <Button variant="contained" color="primary" fullWidth type="submit" sx={{ mt: 2.5 ,ml:4.7,width:"100%", maxWidth:"250px", borderRadius:12, '&:hover': {
+          <Button variant="contained" color="primary" fullWidth type="submit" sx={{ mt: 2.8 ,ml:4.7,width:"100%", maxWidth:"250px", borderRadius:12, '&:hover': {
             backgroundColor: 'primary.dark', // Adjust the color when hovered
             boxShadow: 3, // Add a nice shadow on hover
             transform: 'scale(0.90)', // Slightly enlarge the button for a more dynamic effect
