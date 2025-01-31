@@ -14,8 +14,8 @@ const LeftImageSection = () => {
     >
       {/* Logo positioned at the top-left corner */}
       <img
-        src="/assets/Logo.png" // Replace with the correct path to your uploaded logo
-        alt="Logo"
+        // src="/assets/Logo.png" // Replace with the correct path to your uploaded logo
+        // alt="Logo"
         style={{
           position: "absolute",
           top: "20px",
