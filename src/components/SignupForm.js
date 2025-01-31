@@ -23,6 +23,7 @@ import DriveFileRenameOutlineTwoToneIcon from "@mui/icons-material/DriveFileRena
 import MarkEmailReadTwoToneIcon from "@mui/icons-material/MarkEmailReadTwoTone";
 import KeyTwoToneIcon from "@mui/icons-material/KeyTwoTone";
 
+
 const SignupForm = () => {
 
   const theme = createTheme({
@@ -130,7 +131,9 @@ const SignupForm = () => {
     }
   };
 
-  return (
+  return <>
+
+    
     <Box display="flex" justifyContent="center" alignItems="center" minHeight="68vh" margin-top="20px" >
       {/* <Paper elevation={5} sx={{ padding: 3, marginLeft:1.5, marginRight:1.5,marginTop:1.5,marginBottom:1.5, borderRadius: 4, maxWidth: 420 }}> */}
         <Box>
@@ -145,28 +148,28 @@ const SignupForm = () => {
 
           <form onSubmit={handleSubmit}>
           <TextField
-   fullWidth
-  label="First Name"
-  name="firstName"
-  value={formData.firstName}
-  onChange={handleChange}
-  error={!!errors.firstName}
-  helperText={errors.firstName}
-  variant="standard" // Removes the default box outline
-  sx={{
-    width: "100%", // Ensures responsiveness
-    maxWidth: "340px",
-    ml:5
-  }}
-  InputProps={{
-    disableUnderline: false, // Keep the underline effect
-    endAdornment: (
-      <InputAdornment position="end">
-        <DriveFileRenameOutlineTwoToneIcon color="action" />
-      </InputAdornment>
-    ),
-  }}
-/>
+            fullWidth
+            label="First Name"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+            error={!!errors.firstName}
+            helperText={errors.firstName}
+            variant="standard" // Removes the default box outline
+            sx={{
+              width: "100%", // Ensures responsiveness
+              maxWidth: "340px",
+              ml:5
+            }}
+            InputProps={{
+              disableUnderline: false, // Keep the underline effect
+              endAdornment: (
+                <InputAdornment position="end">
+                  <DriveFileRenameOutlineTwoToneIcon color="action" />
+                </InputAdornment>
+              ),
+            }}
+              />
 
             <TextField theme={theme} fullWidth label="Last Name" name="lastName" value={formData.lastName} onChange={handleChange} margin="normal" error={!!errors.lastName} helperText={errors.lastName} variant="standard"
              sx={{  width: "100%", // Ensures responsiveness
@@ -293,7 +296,10 @@ const SignupForm = () => {
         </Box>
       {/* </Paper> */}
     </Box>
-  );
+    
+  </>;
+ 
+  
 };
 
 export default SignupForm;
